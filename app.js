@@ -104,7 +104,7 @@ function checkMatch(){
     cardsChosenId = []
 
     if (cardsWon.length == cardArray.length /2 ){
-        resultDisplay.innerHTML = "Congradulations You've found them all  "
+        resultDisplay.innerHTML = "Congrats You've found them all  "
         promptMessage.innerText = ""
         reloadButton.style.display = "block" ;
     }
