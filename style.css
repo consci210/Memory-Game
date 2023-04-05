@@ -1,0 +1,70 @@
+*{
+
+    padding : 0;
+    margin : 0 ;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background-color: rgb(3, 3, 84);
+    color: aliceblue;
+
+}
+
+
+
+#grid {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border: solid white;
+    width: fit-content;
+    height: fit-content;
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(4,1fr);
+    grid-gap: 0.25rem ;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns:minmax(100px , auto) ;
+   
+} 
+img:hover {
+   border :solid 3px azure ;
+   box-shadow: 2px 2px azure;
+   cursor: pointer;
+}
+#title{
+    background-color: azure;
+    color:rgb(3, 3, 84);
+    padding: 1rem ;
+    height :3rem ;
+    text-align: center;
+    margin:3rem 0rem;
+    border: solid 2px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px wheat;
+}
+#score{
+    text-align: right;
+    padding: 1rem;
+}
+
+#prompt{
+    text-align: center;
+    padding-bottom:1rem ;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+#reload{
+    display: none;
+}
+#reload:hover{
+
+    box-shadow: 2px -3px red ;
+    cursor: pointer;
+}
